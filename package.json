@@ -1,0 +1,30 @@
+{
+  "name": "expressskeleton",
+  "version": "1.0.0",
+  "description": "Use this express Skeleton for future projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start ecosystem.config.json",
+    "dev": "cross-env NODE_ENV=develpment nodemon src/server/app.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --check **/*.js",
+    "prettier:fix": "prettier --write **/*.js",
+    "prepare": "husky install"
+  },
+  "author": "WAJID MUJIB",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "http-status": "^1.6.2",
+    "joi": "^17.9.2",
+    "mongoose": "^7.4.2",
+    "nodemon": "^3.0.1",
+    "passport": "^0.6.0"
+  }
+}
